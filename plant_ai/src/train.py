@@ -8,7 +8,7 @@ def train_model():
     """
     # Parameters
     batch_size = 32
-    # This will take a long time to run. For a quicker test, reduce the number of epochs.
+    # Set to 15 for full training.
     epochs = 15
 
     # Create the training and validation data generators

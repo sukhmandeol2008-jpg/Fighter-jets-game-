@@ -19,7 +19,7 @@ This project aims to create an AI for plant information and disease detection.
     cd src
     python train.py
     ```
-    *Note: The training process will take a very long time.*
+    *Note: The training process will take a very long time. This will generate the `plant_disease_model.h5` and `class_indices.json` files required by the prediction app.*
 
 4.  **Run a prediction:**
     ```bash

@@ -40,6 +40,8 @@ def predict_disease(image_path, model_path='plant_disease_model.h5', class_indic
 
     return class_label
 
+from googlesearch import search
+
 if __name__ == '__main__':
     if len(sys.argv) != 2:
         print("Usage: python app.py <image_path>")
@@ -48,3 +50,14 @@ if __name__ == '__main__':
     image_path = sys.argv[1]
     prediction = predict_disease(image_path)
     print(f"Predicted disease: {prediction}")
+
+    # Perform a Google search for the predicted disease
+    print("\nTop 3 search results:")
+    # The search function returns a generator. We iterate through it and break after 3 results.
+    try:
+        for i, result in enumerate(search(f"{prediction} disease", lang="en")):
+            print(f"{i+1}. {result}")
+            if i == 2:
+                break
+    except Exception as e:
+        print(f"An error occurred during Google search: {e}")
