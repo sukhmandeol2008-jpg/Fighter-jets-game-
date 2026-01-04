@@ -1,0 +1,11 @@
+# Ignore the dataset
+data/
+
+# Ignore model files
+*.h5
+
+# Ignore log files
+*.log
+
+# Ignore generated JSON files
+*.json

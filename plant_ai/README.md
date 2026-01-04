@@ -1,0 +1,28 @@
+# Plant AI Project
+
+This project aims to create an AI for plant information and disease detection.
+
+## Setup
+
+1.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2.  **Download the dataset:**
+    ```bash
+    git clone https://github.com/spMohanty/PlantVillage-Dataset data
+    ```
+
+3.  **Train the model:**
+    ```bash
+    cd src
+    python train.py
+    ```
+    *Note: The training process will take a very long time. This will generate the `plant_disease_model.h5` and `class_indices.json` files required by the prediction app.*
+
+4.  **Run a prediction:**
+    ```bash
+    cd src
+    python app.py <path_to_image>
+    ```
